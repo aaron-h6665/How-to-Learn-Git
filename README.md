@@ -24,3 +24,9 @@ Resources for those new to GitHub and Git with annotations from a relatively new
 3. Vim
    When you type git commit without the "-m" you will enter the code editor of Vim which is built into the command prompt. Vim is high-powered, but very complex.
    We don't need to use it for now. To escape, and make a commit, type ":wq."
+
+4. Git: Branches, Merges, and Checking Out
+   git checkout -b feature - "-b" stands for making a branch. Switches to the "feature" branch.
+   HEAD -> feature
+   Important that you branch two branches together, there is a "giver" and a "receiver."
+   git merge - Merge two branches together
