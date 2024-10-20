@@ -20,4 +20,7 @@ Resources for those new to GitHub and Git with annotations from a relatively new
    git commit -m - Commit Changes
    git checkout -
    git log - A Log of Commits (Author, Date, Name of Commit)
-   
+
+3. Vim
+   When you type git commit without the "-m" you will enter the code editor of Vim which is built into the command prompt. Vim is high-powered, but very complex.
+   We don't need to use it for now. To escape, and make a commit, type ":wq."
