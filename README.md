@@ -2,6 +2,28 @@
 
 ## Resources for those new to GitHub and Git with annotations from a relatively new Git/GitHub user
 
+### Resources That I Have Used
+The very first tutorial that I used was this Introduction to Github that teaches you the basics.
+* https://github.com/skills/introduction-to-github
+
+I wouldn't recommend this tutorial but if you are interested in creating a blog/page of a repository, this is a basic guide to that.
+* https://github.com/skills/github-pages
+
+Official Beginner's Guide to GitHub Using VSCode:
+* https://www.youtube.com/watch?v=i_23KUAEtUM&t=254s&pp=ygUTZ2l0aHViIHdpdGggdnMgY29kZQ%3D%3D
+
+Level Up Your GitHub Profile:
+* https://www.youtube.com/watch?v=DWFs6aqknqw
+
+How to Write a Useful README File:
+* https://www.youtube.com/watch?v=E6NO0rgFub4
+
+How to Add Images to README:
+* https://stackoverflow.com/questions/14494747/how-to-add-images-to-readme-md-on-github
+
+### My Notes On a Follow Through of Dr. Zufelt's Guide to Git
+My teacher in CSC 471: Cryptography Dr. Zufelt has given me a bunch of videos, resources, and exercises to learn how to use Git. I have forked the repository that contains the material that I am following: https://github.com/aaron-h6665/resources_for_students.git. There is also info on Web Dev if you are interested but I will not be covering that.
+
 1. The Command Line <br /> <br />
 I am using Git Bash. Here are some basic commands that one can use in the command line.
    * cd - Change Directory
