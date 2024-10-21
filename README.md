@@ -2,7 +2,7 @@
 
 ## Resources for those new to GitHub and Git with annotations from a relatively new Git/GitHub user
 
-### Resources That I Have Used
+### Resources That I Have Used, in the Order I Encountered Them
 The very first tutorial that I used was this Introduction to Github that teaches you the basics.
 * https://github.com/skills/introduction-to-github
 
