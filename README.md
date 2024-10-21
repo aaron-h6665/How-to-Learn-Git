@@ -2,7 +2,7 @@
 
 ## Resources for those new to GitHub and Git with annotations from a relatively new Git/GitHub user
 
-1. The Command Line
+1. The Command Line \n
 I am using Git Bash. Here are some basic commands that one can use in the command line.
   * cd - Change Directory
   * cd .. - Change to Parent Directory
@@ -14,7 +14,7 @@ I am using Git Bash. Here are some basic commands that one can use in the comman
   * ls - List Files/Folders in Working Directory
   * pwd - Print Working Directory
 
-2. Commits
+2. Commits \n
 Consider the normal saving capabilities of a file. If you want to return to a previous version, you may be unable to do that as you have overwritten the file. However, Git commits get around this (like a snapshot in time).
    * git init - Initialize a Folder as a Git Repository
    * git add - Turn Untracked Files to Tracked (Changes can be Committed)
@@ -22,7 +22,7 @@ Consider the normal saving capabilities of a file. If you want to return to a pr
    * git checkout - 
    * git log - A Log of Commits (Author, Date, Name of Commit)
 
-3. Vim
+3. Vim \n
 When you type git commit without the "-m" you will enter the code editor of Vim which is built into the command prompt. Vim is high-powered, but very complex.
 We don't need to use it for now. To escape, and make a commit, type ":wq" (write quit).
 
