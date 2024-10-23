@@ -21,6 +21,10 @@ How to Write a Useful README File:
 How to Add Images to README:
 * https://stackoverflow.com/questions/14494747/how-to-add-images-to-readme-md-on-github
 
+### How I would go about learning Git if I knew everything I know now at the beginning
+
+...
+
 ### My Notes On a Follow Through of Dr. Zufelt's Guide to Git
 My teacher in CSC 471: Cryptography Dr. Zufelt has given me a bunch of videos, resources, and exercises to learn how to use Git. I have forked the repository that contains the material that I am following: https://github.com/aaron-h6665/resources_for_students.git. There is also info on Web Dev if you are interested but I will not be covering that.
 
