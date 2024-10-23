@@ -7,7 +7,7 @@
 One of the first things I encountered, perhaps by luck or through research, was that GitHub offers Pro for free to students. Thus, if you are a student like me, I would encourage you to verify your student identity to unlock free, powerful resources such as Copilot and much more. You can find all the offers in the GitHub Student Developer Pack in the link below. You can also sign up for the Student Pro Offer easily after clicking on that link.
 * https://education.github.com/pack#github-copilot
 
-The very first tutorial that I used from the GitHub Student Developer Pack was Introduction to GitHub. This tutorial was informative and easy to follow. It only takes about 15-20 minutes. However, this only covers how to do version control on Github, and not with Git.
+The very first tutorial that I used from the GitHub Student Developer Pack was Introduction to GitHub. This tutorial was informative and easy to follow. It only takes about 15-20 minutes. However, this only covers how to do version control on Github, and not with Git. What I mean is this tutorial covers features on the GitHub site, and not remotely changing with Git.
 * https://github.com/skills/introduction-to-github
 
 The second tutorial that I did was how to create a GitHub Page. I thought that it would be interesting to do, but I ended up realizing that it was too hard to implement. I wouldn't recommend this tutorial but if you are interested in creating a blog/page of a repository, this is a basic guide to that. 
@@ -24,7 +24,7 @@ On a whim, after some early commits and repository creations, I wanted to upgrad
 For the first stretch goal that I was assigned in my class, I needed to explore the difference between functional code, and professionally-ready code. Through my research and actions, I had to implement Git/GitHub and do research on both. I noted my findings and actions in the document that I wrote below. I would recommend documenting things that you have learned and sharing them with others to get feedback on your understanding and improve your technical writing abilities.
 * https://docs.google.com/document/d/1kISeX1kLAWPYo4WMF4C1HkhNQaWgN5VVfX4P5wZZieo/edit?usp=sharing
 
-I would encourage trying to work with others on code as early as possible. What I mean is to join a group project and create a group repository so that you can actually implement your knowledge about branches, merging, and push/pulling. This way, you will have these concepts deeply reinforced. I haven't really done this yet, but I did contribute to one of my classmate's repositories, and through that, I could practice branches, merging, and push/pulling on a small scale.
+I would also encourage working with others on code as early as possible. What I mean is to join a group project and create a group repository so that you can implement your knowledge about branches, merging, and push/pulling. This way, you will have these concepts deeply reinforced. I haven't done this yet, but I did contribute to one of my classmate's repositories, and through that, I could practice branches, merging, and push/pulling on a small scale.
 
 One of the most recent things that I have learned to do on GitHub is how to write a useful README file. These are arguably the most important files in a GitHub repository as they inform a prospective reader about what the repository is about, what is being worked on, what known issues there might be, and how one could contribute. For me, some of these additions to the README file are overkill, but I would say that learning about formatting, adding images, and simple things like how to bullet and space correctly is vital to creating a functional README file. Some resources that I found and would recommend are below:
 * https://www.youtube.com/watch?v=E6NO0rgFub4
@@ -32,6 +32,8 @@ One of the most recent things that I have learned to do on GitHub is how to writ
 * https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#paragraphs
 
 As of now, the final piece of material that I have been looking at is how to use Git outside of the VSCode interpreter i.e. through the command prompt/Git Bash. The repository that I am using is created by my teacher Dr. Zufelt and I will share my notes below. The repository is very informative and I have been learning a lot so far.
+
+Overall, I would characterize my experience with Git and GitHub as fulfilling and challenging. While I still have initial difficulties with version control, it is fun to learn about the ways that I can organize files and share and collaborate with others. I feel like I am starting to understand how to use Git and GitHub in meaningful manners.
 
 ### My Notes On a Follow-Through of Dr. Zufelt's Guide to Git
 My teacher in CSC 471: Cryptography Dr. Zufelt has given me a bunch of videos, resources, and exercises to learn how to use Git. I have forked the repository that contains the material that I am following: https://github.com/aaron-h6665/resources_for_students.git. There is also info on Web Dev if you are interested but I will not be covering that.
