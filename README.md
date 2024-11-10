@@ -65,11 +65,18 @@ We don't need to use it for now. To escape, and make a commit, type ":wq" (write
 4. Exercise: "Now that you've seen the basics of the command line and git, I want you to make a repository that has exactly 4 commits in it." <br /> <br />
 I approached this problem by changing directories (cd) until I reached a desired directory and then making a new one using mkdir. Then, I used "git init" to initialize the new directory as a Git Repository. Next, I created a new Python file called test using "code test.py." This should open a new file in your interpreter. In my case, my Visual Studio Code opened up to a blank file called "test.py." Then make a basic edit to the file. I just added something simple like "10+10." Right now the file is untracked, so we should make the file tracked (changes can be committed) by using "git add." Now we can make our first commit by using "git commit -m". First commit done. To reach four commits, we would just make three more edits and commit each time (remember to use "git add" each time). That's how we can reach exactly 4 commits to the repository. You can check how many commits using "git log."
 
-![Alt Text]()
+![Alt Text](git_log_example)
 
-6. Git: Branches, Merges, and Checking Out <br /> <br />
+5. Git: Branches, Merges, and Checking Out <br /> <br />
 Branches and Merges are important features of Git. They allow us to work on two separate portions of a project at the same time and ultimately merge them together. Checkout allows us to switch our HEAD between branches.
    * git checkout -b feature - "-b" stands for making a branch. Switches to the "feature" branch.
    * HEAD -> feature
    * Important that you branch two branches together, there is a "giver" and a "receiver."
    * git merge - Merge two branches together
+   * git checkout - the basic mechanism for moving around in the commit tree, moving your focus (HEAD) to the specified commit.
+
+6. Exercise -- Now, I'd like for you to make a particular git tree. (Meaning: make a git repository, and create commits such that the commit tree looks like as below.) 
+![Git Diamond](git_diamond.png)
+* How can you prove that this correct? _(Hint: it requires multiple uses of `git log`.)_
+
+I will again explain my approach. First, we need to have an initial commit. Then we create a new branch "feature" using "git checkout -b feature." This will also switch to the "feature" branch. Now, we switch back to the "master" branch using "git checkout master." We add our second and third commits. Then we switch our "HEAD" to feature. Now, we should make our fourth commit. Switch once again back to master. Now we use "git merge feature" to merge feature with branch and this will effectively be our fifth commit, thus completing the diagram and task above. 
