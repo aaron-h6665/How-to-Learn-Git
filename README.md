@@ -79,4 +79,15 @@ Branches and Merges are important features of Git. They allow us to work on two 
 ![Git Diamond](git_diamond.png)
 * How can you prove that this correct? _(Hint: it requires multiple uses of `git log`.)_
 
-I will again explain my approach. First, we need to have an initial commit. Then we create a new branch "feature" using "git checkout -b feature." This will also switch to the "feature" branch. Now, we switch back to the "master" branch using "git checkout master." We add our second and third commits. Then we switch our "HEAD" to feature. Now, we should make our fourth commit. Switch once again back to master. Now we use "git merge feature" to merge feature with branch and this will effectively be our fifth commit, thus completing the diagram and task above. 
+I will again explain my approach. First, we need to have an initial commit. Then we create a new branch "feature" using "git checkout -b feature." This will also switch to the "feature" branch. Now, we switch back to the "master" branch using "git checkout master." We add our second and third commits. Then we switch our "HEAD" to feature. Notice that the feature branch does not have the second or third commits.
+
+![Alt_Text](feature_no_second_or_third_commit)
+
+Now, we should make our fourth commit. Switch once again back to master. Notice that the master branch does not have the fourth commit.
+
+![Alt_Text](master_no_fourth_commit)
+
+Now we use "git merge feature" to merge feature with branch and this will effectively be our fifth commit, thus completing the diagram and task above. Notice where the "HEAD" points.
+
+![Alt_Text](exercise_2_final)
+
