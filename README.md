@@ -81,13 +81,23 @@ Branches and Merges are important features of Git. They allow us to work on two 
 
 I will again explain my approach. First, we need to have an initial commit. Then we create a new branch "feature" using "git checkout -b feature." This will also switch to the "feature" branch. Now, we switch back to the "master" branch using "git checkout master." We add our second and third commits. Then we switch our "HEAD" to feature. Notice that the feature branch does not have the second or third commits.
 
-![Alt_Text](feature_no_second_or_third_commit)
+![Alt_Text](feature_no_second_or_third_commit.png)
 
 Now, we should make our fourth commit. Switch once again back to master. Notice that the master branch does not have the fourth commit.
 
-![Alt_Text](master_no_fourth_commit)
+![Alt_Text](master_no_fourth_commit.png)
 
 Now we use "git merge feature" to merge feature with branch and this will effectively be our fifth commit, thus completing the diagram and task above. Notice where the "HEAD" points.
 
-![Alt_Text](exercise_2_final)
+![Alt_Text](exercise_2_final.png)
+
+7. [The Git Parable](https://tom.preston-werner.com/2009/05/19/the-git-parable.html) Reading
+* a short, simple story that teaches or explains an idea
+* I'm not going to lie, I didn't completely read the whole story in detail. But from what I did read, it has some nice analogies that would help a beginner better understand the workings behind Git and specifically with things such as commits, branches, merging, and more.
+
+8. Merge Conflicts
+   * less - shows the conflicts on the Git Bash/Command Prompt
+   * If you have a conflict you have to go into the intrepreter to manually tweek the code, and then add and commit those changes. The merge will occur naturally (provided you have already tried to merge the files and the conflict appears).
+  
+9. Git Time Travel
 
