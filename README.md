@@ -55,14 +55,19 @@ Consider the normal saving capabilities of a file. If you want to return to a pr
    * git init - Initialize a Folder as a Git Repository
    * git add - Turn Untracked Files to Tracked (Changes can be Committed)
    * git commit -m - Commit Changes
-   * git checkout - 
+   * git checkout - the basic mechanism for moving around in the commit tree, moving your focus (HEAD) to the specified commit.
    * git log - A Log of Commits (Author, Date, Name of Commit)
 
 3. Vim <br /> <br />
 When you type git commit without the "-m" you will enter the code editor of Vim which is built into the command prompt. Vim is high-powered but very complex.
 We don't need to use it for now. To escape, and make a commit, type ":wq" (write quit).
 
-4. Git: Branches, Merges, and Checking Out <br /> <br />
+4. Exercise: "Now that you've seen the basics of the command line and git, I want you to make a repository that has exactly 4 commits in it." <br /> <br />
+I approached this problem by changing directories (cd) until I reached a desired directory and then making a new one using mkdir. Then, I used "git init" to initialize the new directory as a Git Repository. Next, I created a new Python file called test using "code test.py." This should open a new file in your interpreter. In my case, my Visual Studio Code opened up to a blank file called "test.py." Then make a basic edit to the file. I just added something simple like "10+10." Right now the file is untracked, so we should make the file tracked (changes can be committed) by using "git add." Now we can make our first commit by using "git commit -m". First commit done. To reach four commits, we would just make three more edits and commit each time (remember to use "git add" each time). That's how we can reach exactly 4 commits to the repository. You can check how many commits using "git log."
+
+![Alt Text]()
+
+6. Git: Branches, Merges, and Checking Out <br /> <br />
 Branches and Merges are important features of Git. They allow us to work on two separate portions of a project at the same time and ultimately merge them together. Checkout allows us to switch our HEAD between branches.
    * git checkout -b feature - "-b" stands for making a branch. Switches to the "feature" branch.
    * HEAD -> feature
