@@ -107,7 +107,12 @@ Now we use "git merge feature" to merge feature with branch and this will effect
 
 This will end up generating a text that says "you are in 'detached HEAD' state." 'Detached HEAD' means it isn't pointed at a branch, it is pointed at a commit. But this isn't so good because we don't have a branch associated. So all we have to do is to create a new branch using "git checkout" at this point and we are all good.
 
-10. 10. **Exercise** -- First, I'd like you to create a simple repository that has this git tree:
+10. **Exercise** -- First, I'd like you to create a simple repository that has this git tree:
   ![Time Travel Part 1](Git_Time_Travel_1.png)  
   Then, I'd like you to turn that respository into the following one, via time travel:
   ![Time Travel Part 2](Git_Time_Travel_2.png)
+
+Here, we do our first three commits. Then, we use the 'detached HEAD method' to go to the second commit. Now we create the "bug-fix" branch using "git checkout -b" and finally we add the fourth commit (which is a "bug-fix").
+
+![Time Travel](bug-fix.png)
+![Time Travel](master.png)
