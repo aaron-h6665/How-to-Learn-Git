@@ -112,7 +112,10 @@ This will end up generating a text that says "you are in 'detached HEAD' state."
   Then, I'd like you to turn that respository into the following one, via time travel:
   ![Time Travel Part 2](Git_Time_Travel_2.png)
 
-Here, we do our first three commits. Then, we use the 'detached HEAD method' to go to the second commit. Now we create the "bug-fix" branch using "git checkout -b" and finally we add the fourth commit (which is a "bug-fix").
-
-![Time Travel](bug-fix.png)
+Here, we do our first three commits. 
 ![Time Travel](master.png)
+
+Then, we use the 'detached HEAD method' to go to the second commit. Now we create the "bug-fix" branch using "git checkout -b" and finally we add the fourth commit (which is a "bug-fix").
+
+![Time Travel](bug_fix.png)
+
