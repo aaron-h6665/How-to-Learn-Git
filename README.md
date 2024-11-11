@@ -128,6 +128,17 @@ A Remote Repository is a repository that is not on your local device.
   * You NEVER want to have Git Repositories inside of Git Repositories
   * git clone - clone a remote repository onto your local device
   * cat - current local version
+
 So this video teaches us how to push local code to a remote repository and how to clone a remote repository onto a local device.
 
-12. 
+12. Git Pushing Happens with Branches, not Trees
+* Basically, this is just saying you have to push branch by branch, and if for example, you are working on branch "master" but type "git push origin feature" where "feature" is a different branch, it won't work quite well. Just be careful with the branches that you are working with when pushing.
+
+13. Exercise -- I want you now to practice a bunch with remotes:
+init versus clone: You should make a git repository on your computer, create a remote for it (after having made it on your computer), and push code up to it. You should also make a repository on GitHub, clone it down, and figure out the difference. When would one method make more sense than another?
+pushing: Make some changes to your code, and push up new changes. Verify that your remote repository is up to date with the local one afterward (and wasn't before!)
+pulling: In order to practice pulling, we need to be a little bit clever. I want you to practice having the remote and local repositories being in different states, and then fixing it. Please create two repositories: one in which the local repository is "ahead" of the remote repository, and one in which the local branch is "behind" the remote repository. Then fix each one by pushing or pulling as appropriate (and confirm that they're now in sync). In thinking about that final point, you might be confused. How could you possibly have a remote branch that's ahead of your local branch if you're the only person editing the repository? Here are two ways you could set that up:
+You can edit files directly on GitHub: what effect does that have?
+You could have a local repository which you've cloned down to a totally different, second folder on your computer, which is purposefully going to be "old", then using the main (local) repository, you push up some new code. Now, the remote is ahead of the "old" version.
+
+When you edit files directly on GitHub, those edits will only effect the files on GitHub. You will need to clone everything again to get stuff back. 
