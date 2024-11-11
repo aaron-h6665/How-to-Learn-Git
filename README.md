@@ -142,3 +142,9 @@ You can edit files directly on GitHub: what effect does that have?
 You could have a local repository which you've cloned down to a totally different, second folder on your computer, which is purposefully going to be "old", then using the main (local) repository, you push up some new code. Now, the remote is ahead of the "old" version.
 
 When you edit files directly on GitHub, those edits will only effect the files on GitHub. You will need to clone everything again to get stuff back. 
+
+14. Forking and Pulling
+* forking means when you go onto GitHub and you copy a repository that someone else owns and basically creates a copy that is now your own repository.
+* origin - your repository; upstream - the other person's repository
+* you can push and pull from origin, you can only pull from upstream
+* pull request is when you request the other person to pull your version into their code.
