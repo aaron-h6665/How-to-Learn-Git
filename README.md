@@ -119,3 +119,15 @@ Then, we use the 'detached HEAD method' to go to the second commit. Now we creat
 
 ![Time Travel](bug_fix.png)
 
+11. Git Remote Repository
+A Remote Repository is a repository that is not on your local device.
+  * git remote add {origin} {https link to GitHub Repo} - connects the remote repository to your local device
+  * git remote - checks the name of the repo???
+  * git remote -v - shows the name and fetch, push links
+  * git push {origin} {name of branch} - pushes local code changes to the remote repository
+  * You NEVER want to have Git Repositories inside of Git Repositories
+  * git clone - clone a remote repository onto your local device
+  * cat - current local version
+So this video teaches us how to push local code to a remote repository and how to clone a remote repository onto a local device.
+
+12. 
