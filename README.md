@@ -13,7 +13,7 @@ The very first tutorial that I used from the GitHub Student Developer Pack was I
 The second tutorial that I did was how to create a GitHub Page. I thought that it would be interesting to do, but I ended up realizing that it was too hard to implement. I wouldn't recommend this tutorial but if you are interested in creating a blog/page of a repository, this is a basic guide to that. 
 * https://github.com/skills/github-pages
 
-I use VSCode Interpreter, and I wanted to learn how to use Git in VSCode. I first noticed that VSCode allows one to link their GitHub account with the local VSCode interpreter, allowing for an easy connection between code and GitHub, so I did that. I found out how to do this on my own, but if you need a guide I will put it in the first bullet point below. Afterwards, I download Git for Windows, to be able to exploit Git (link to Git in the second bullet below). Now, I was ready to learn how to use Git. The video that I found most helpful was under VSCode's YouTube channel, which was "Official Beginner's Guide to GitHub Using VSCode." It helped a lot with the basics of how to use Git source control with VSCode, but you need to practice and review the video a few times to fully understand everything about committing, branching, merging, and push/pulling. I have put that video below as well. I would recommend at of these steps (some are mandatory, like installing Git!).
+I use VSCode Interpreter, and I wanted to learn how to use Git in VSCode. I first noticed that VSCode allows one to link their GitHub account with the local VSCode interpreter, allowing for an easy connection between code and GitHub, so I did that. I found out how to do this on my own, but if you need a guide I will put it in the first bullet point below. Afterwards, I downloaded Git for Windows, to be able to exploit Git (link to Git in the second bullet below). Now, I was ready to learn how to use Git. The video that I found most helpful was under VSCode's YouTube channel, which was "Official Beginner's Guide to GitHub Using VSCode." It helped a lot with the basics of how to use Git source control with VSCode, but you need to practice and review the video a few times to fully understand everything about committing, branching, merging, and push/pulling. I have put that video below as well. I would recommend all of these steps (some are mandatory, like installing Git!).
 * https://www.youtube.com/watch?v=uqZwcUTVew8
 * https://git-scm.com/downloads
 * https://www.youtube.com/watch?v=i_23KUAEtUM&t=254s&pp=ygUTZ2l0aHViIHdpdGggdnMgY29kZQ%3D%3D
@@ -39,10 +39,10 @@ Overall, I would characterize my experience with Git and GitHub as fulfilling an
 My teacher in CSC 471: Cryptography Dr. Zufelt has given me a bunch of videos, resources, and exercises to learn how to use Git. I have forked the repository that contains the material that I am following: https://github.com/aaron-h6665/resources_for_students.git. There is also info on Web Dev if you are interested but I will not be covering that.
 
 1. The Command Line <br /> <br />
-I am using Git Bash. Here are some basic commands that one can use in the command line.
-   * cd - Change Directory
+I am using Git Bash. Here are some basic commands that one can use in the command line. They are useful in navigating the folders on your computer, creating new folders and files, and copying, deleting, moving, and listing folders and files. You could do all this manipulation of folders manually, but honestly it's valuable to learn all these commands. 
+   * cd {directory} - Change to the directory "{directory}"
    * cd .. - Change to Parent Directory
-   * code - Create File
+   * code {file} - Create a file specified by "{file}"
    * cp - Copy
    * rm - Remove
    * mkdir - Make Directory
@@ -51,61 +51,63 @@ I am using Git Bash. Here are some basic commands that one can use in the comman
    * pwd - Print Working Directory
 
 2. Commits <br /> <br />
-Consider the normal saving capabilities of a file. If you want to return to a previous version, you may be unable to do that as you have overwritten the file. However, Git commits get around this (like a snapshot in time).
+Consider the normal saving capabilities of a file. If you want to return to a previous version, you may be unable to do that as you have overwritten the file. However, Git commits get around this (like a snapshot in time). First, you would initialize a folder to become a Git repository through "git init." Then you would use "git add" to track the file changes. Lastly, you would use "git commit -m" to commit those changes locally.
    * git init - Initialize a Folder as a Git Repository
    * git add - Turn Untracked Files to Tracked (Changes can be Committed)
    * git commit -m - Commit Changes
-   * git checkout - the basic mechanism for moving around in the commit tree, moving your focus (HEAD) to the specified commit.
+   * git checkout - the basic mechanism for moving around in the commit tree, moving your focus (HEAD) to the specified branch.
    * git log - A Log of Commits (Author, Date, Name of Commit)
+   * git status - shows the status of your repository
 
 3. Vim <br /> <br />
 When you type git commit without the "-m" you will enter the code editor of Vim which is built into the command prompt. Vim is high-powered but very complex.
 We don't need to use it for now. To escape, and make a commit, type ":wq" (write quit).
 
 4. Exercise: "Now that you've seen the basics of the command line and git, I want you to make a repository that has exactly 4 commits in it." <br /> <br />
-I approached this problem by changing directories (cd) until I reached a desired directory and then making a new one using mkdir. Then, I used "git init" to initialize the new directory as a Git Repository. Next, I created a new Python file called test using "code test.py." This should open a new file in your interpreter. In my case, my Visual Studio Code opened up to a blank file called "test.py." Then make a basic edit to the file. I just added something simple like "10+10." Right now the file is untracked, so we should make the file tracked (changes can be committed) by using "git add." Now we can make our first commit by using "git commit -m". First commit done. To reach four commits, we would just make three more edits and commit each time (remember to use "git add" each time). That's how we can reach exactly 4 commits to the repository. You can check how many commits using "git log."
+I approached this problem by changing directories (cd) until I reached a desired directory and then making a new one using mkdir. Then, I used "git init" to initialize the new directory as a Git Repository. Next, I created a new Python file called test using "code test.py." This should open a new file in your interpreter. In my case, my Visual Studio Code opened up to a blank file called "test.py." Then make a basic edit to the file. I just added something simple like "10+10." Right now the file is untracked, so we should make the file tracked (changes can be committed) by using "git add test.py." Now we can make our first commit by using "git commit -m 'first commit'". First commit done. To reach four commits, we would just make three more edits and commit each time (remember to use "git add" each time). That's how we can reach exactly 4 commits to the repository. You can check how many commits you are at using "git log."
 
 ![Alt Text](git_log_example)
 
 5. Git: Branches, Merges, and Checking Out <br /> <br />
-Branches and Merges are important features of Git. They allow us to work on two separate portions of a project at the same time and ultimately merge them together. Checkout allows us to switch our HEAD between branches.
+Branches and Merges are important features of Git. They allow us to work on two separate portions of a project at the same time and ultimately merge them together. The "git checkout" command allows us to switch our HEAD (which points to which branch we are on) between branches.
    * git checkout -b feature - "-b" stands for making a branch. Switches to the "feature" branch.
-   * HEAD -> feature
-   * Important that you branch two branches together, there is a "giver" and a "receiver."
-   * git merge - Merge two branches together
+   * HEAD (points to) -> feature (now instead of master)
+   * It is important to remember that when you branch two branches together, there is a "giver" and a "receiver."
+   * git merge - Merge two branches together.
+     * sometimes when you use git merge there will be a conflict, but look further down to number 8 to see how to resolve this issue if you need help with that
    * git checkout - the basic mechanism for moving around in the commit tree, moving your focus (HEAD) to the specified commit.
 
 6. Exercise -- Now, I'd like for you to make a particular git tree. (Meaning: make a git repository, and create commits such that the commit tree looks like as below.) 
 ![Git Diamond](git_diamond.png)
 * How can you prove that this correct? _(Hint: it requires multiple uses of `git log`.)_
 
-I will again explain my approach. First, we need to have an initial commit. Then we create a new branch "feature" using "git checkout -b feature." This will also switch to the "feature" branch. Now, we switch back to the "master" branch using "git checkout master." We add our second and third commits. Then we switch our "HEAD" to feature. Notice that the feature branch does not have the second or third commits.
+I will again explain my approach. First, we need to have an initial commit. Then we create a new branch "feature" using "git checkout -b feature." This will also switch to the "feature" branch. Now, we switch back to the "master" branch using "git checkout master." We add our second and third commits to the master branch. Then we switch our "HEAD" to feature. Notice that the feature branch does not have the second or third commits.
 
 ![Alt_Text](feature_no_second_or_third_commit.png)
 
-Now, we should make our fourth commit. Switch once again back to master. Notice that the master branch does not have the fourth commit.
+Now, we should make our fourth commit, which will only appear on the feature branch. Switch once again back to master. Notice that the master branch does not have the fourth commit.
 
 ![Alt_Text](master_no_fourth_commit.png)
 
-Now we use "git merge feature" to merge feature with branch and this will effectively be our fifth commit, thus completing the diagram and task above. Notice where the "HEAD" points.
+Now we use "git merge feature" to merge the "feature" branch with "master" and this will effectively be our fifth commit, thus completing the diagram and task above. Notice where the "HEAD" points in the screenshot.
 
 ![Alt_Text](exercise_2_final.png)
 
 7. [The Git Parable](https://tom.preston-werner.com/2009/05/19/the-git-parable.html) Reading
 * a short, simple story that teaches or explains an idea
-* I'm not going to lie, I didn't completely read the whole story in detail. But from what I did read, it has some nice analogies that would help a beginner better understand the workings behind Git and specifically with things such as commits, branches, merging, and more.
+* I'm not going to lie, I didn't completely read the whole story in detail. But from what I did read, it has some nice analogies that would help a beginner better understand the workings behind Git, specifically with things such as commits, branches, merging, and more.
 
 8. Merge Conflicts
    * less - shows the conflicts on the Git Bash/Command Prompt
    * git branch - shows all of the branches
    * git branch -d - locally delete a branch
    * git branch -D - force delete a branch
-   * If you have a conflict you have to go into the intrepreter to manually tweek the code, and then add and commit those changes. The merge will occur naturally (provided you have already tried to merge the files and the conflict appears).
+   * If you have a conflict you have to go into the interpreter to manually tweak the code, and then add and commit those changes. The merge will occur naturally (provided you have already tried to merge the files and the conflict appears).
   
 9. Git Time Travel
   * git checkout {unique commit number} - moves to the specified commit
 
-This will end up generating a text that says "you are in 'detached HEAD' state." 'Detached HEAD' means it isn't pointed at a branch, it is pointed at a commit. But this isn't so good because we don't have a branch associated. So all we have to do is to create a new branch using "git checkout" at this point and we are all good.
+This will end up generating a text that says "you are in 'detached HEAD' state." 'Detached HEAD' means it isn't pointed at a branch, it is pointed at a commit. But this isn't so good because we don't have a branch associated. So all we have to do is to create a new branch using "git checkout -b {new_branch_name}" at this point and we are all good.
 
 10. **Exercise** -- First, I'd like you to create a simple repository that has this git tree:
   ![Time Travel Part 1](Git_Time_Travel_1.png)  
@@ -115,12 +117,12 @@ This will end up generating a text that says "you are in 'detached HEAD' state."
 Here, we do our first three commits. 
 ![Time Travel](master.png)
 
-Then, we use the 'detached HEAD method' to go to the second commit. Now we create the "bug-fix" branch using "git checkout -b" and finally we add the fourth commit (which is a "bug-fix").
+Then, we use the 'detached HEAD method' to go to the second commit. Now we create the "bug-fix" branch using "git checkout -b bug-fix" and finally we add the fourth commit (which is a "bug-fix").
 
 ![Time Travel](bug_fix.png)
 
 11. Git Remote Repository
-A Remote Repository is a repository that is not on your local device.
+A Remote Repository is a repository that is not on your local device. Here are some commands that will help you "connect" your local device with the remote repository using cloning, push/pulling, and remoting.
   * git remote add {origin} {https link to GitHub Repo} - connects the remote repository to your local device
   * git remote - checks the name of the repo???
   * git remote -v - shows the name and fetch, push links
@@ -150,7 +152,8 @@ When you edit files directly on GitHub, those edits will only effect the files o
 * pull request is when you request the other person to pull your version into their code.
 
 15. Git Implementation
-* git remote add upstream - add upstream (the other person's repository) so that you can pull from there later on if somebody else made a new change
+A few commands that allow for the pulling of someone else's code to your local device.
+* git remote add upstream {link to other person's repo} - add upstream (the other person's repository) so that you can pull from there later on if somebody else made a new change
 * git pull upstream master - pulls from the upstream to the master branch
   
 16. Bug detection and real pull request.
