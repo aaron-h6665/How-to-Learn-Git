@@ -40,22 +40,22 @@ My teacher in CSC 471: Cryptography Dr. Zufelt has given me a bunch of videos, r
 
 1. The Command Line <br /> <br />
 I am using Git Bash. Here are some basic commands that one can use in the command line. They are useful in navigating the folders on your computer, creating new folders and files, and copying, deleting, moving, and listing folders and files. You could do all this manipulation of folders manually, but honestly it's valuable to learn all these commands. 
-   * cd {directory} - Change to the directory "{directory}"
+   * cd {directory} - Change to the directory to "{directory}" (make sure that this directory nested in your current directory)
    * cd .. - Change to Parent Directory
-   * code {file} - Create a file specified by "{file}"
-   * cp - Copy
-   * rm - Remove
-   * mkdir - Make Directory
+   * code {file} - Create a file specified by "{file}" i.e. code hello.py creates hello.py
+   * cp  - Copy 
+   * rm {file} - Remove "{file}"
+   * mkdir {name} - Make Directory called "{name}"
    * mv - Move File
    * ls - List Files/Folders in Working Directory
    * pwd - Print Working Directory
 
 2. Commits <br /> <br />
-Consider the normal saving capabilities of a file. If you want to return to a previous version, you may be unable to do that as you have overwritten the file. However, Git commits get around this (like a snapshot in time). First, you would initialize a folder to become a Git repository through "git init." Then you would use "git add" to track the file changes. Lastly, you would use "git commit -m" to commit those changes locally.
+Consider the normal saving capabilities of a file. If you want to return to a previous version, you may be unable to do that as you have overwritten the previous versions of the file with the current version. However, Git commits get around this (like a snapshot in time). First, you would initialize a folder to become a Git repository through "git init." Then you would use "git add" to track the file changes. Lastly, you would use "git commit -m" to commit those changes locally.
    * git init - Initialize a Folder as a Git Repository
    * git add - Turn Untracked Files to Tracked (Changes can be Committed)
-   * git commit -m - Commit Changes
-   * git checkout - the basic mechanism for moving around in the commit tree, moving your focus (HEAD) to the specified branch.
+   * git commit -m "{commit description}"- Commit Changes under "{commit description}" i.e. git commit -m "first commit" if it is your first commit
+   * git checkout {branch}- the basic mechanism for moving around in the commit tree, moving your focus (HEAD) to the specified {branch}.
    * git log - A Log of Commits (Author, Date, Name of Commit)
    * git status - shows the status of your repository
 
@@ -73,7 +73,7 @@ Branches and Merges are important features of Git. They allow us to work on two 
    * git checkout -b feature - "-b" stands for making a branch. Switches to the "feature" branch.
    * HEAD (points to) -> feature (now instead of master)
    * It is important to remember that when you branch two branches together, there is a "giver" and a "receiver."
-   * git merge - Merge two branches together.
+   * git merge {master} - Merge two branches together.
      * sometimes when you use git merge there will be a conflict, but look further down to number 8 to see how to resolve this issue if you need help with that
    * git checkout - the basic mechanism for moving around in the commit tree, moving your focus (HEAD) to the specified commit.
 
@@ -128,7 +128,7 @@ A Remote Repository is a repository that is not on your local device. Here are s
   * git remote -v - shows the name and fetch, push links
   * git push {origin} {name of branch} - pushes local code changes to the remote repository
   * You NEVER want to have Git Repositories inside of Git Repositories
-  * git clone - clone a remote repository onto your local device
+  * git clone {https link to GitHub Repo} - clone a remote repository onto your local device
   * cat - current local version
 
 So this video teaches us how to push local code to a remote repository and how to clone a remote repository onto a local device.
