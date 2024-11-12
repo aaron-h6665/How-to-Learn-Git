@@ -148,3 +148,15 @@ When you edit files directly on GitHub, those edits will only effect the files o
 * origin - your repository; upstream - the other person's repository
 * you can push and pull from origin, you can only pull from upstream
 * pull request is when you request the other person to pull your version into their code.
+
+15. Git Implementation
+* git remote add upstream - add upstream (the other person's repository) so that you can pull from there later on if somebody else made a new change
+* git pull upstream master - pulls from the upstream to the master branch
+  
+16. Bug detection and real pull request.
+
+[Finding and Fixing a scikit-learn bug](https://www.youtube.com/watch?v=1kA7oD7ftsM&t=88s) 
+* Very cool video about contributing to the Open Source sci-kit learn
+
+17. Exercise -- OH NO! I made a typo in this git repository. Can you help me fix it? Please submit a pull request.
+* Just follow the video in 15 or 16 and you should be good to go!
